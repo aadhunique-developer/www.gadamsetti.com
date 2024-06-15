@@ -7,20 +7,34 @@
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Optional: Additional styles */
+        /* Additional styles */
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f3f4f6; /* Optional background color */
+            background: linear-gradient(to right, #4dc0b5, #3490dc, #6574cd); /* Gradient background */
+            font-family: 'Arial', sans-serif; /* Optional: Adjust font family */
+        }
+        .maintenance-content {
+            max-width: 90%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .maintenance-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff00ff; /* Fluorescent pink */
         }
     </style>
 </head>
 <body>
-    <div class="max-w-lg mx-auto p-8 bg-white rounded-lg shadow-lg">
-        <h1 class="text-3xl font-bold text-center text-gray-800">Site Under Maintenance</h1>
+    <div class="maintenance-content">
+        <h1 class="maintenance-title">Site Under Maintenance</h1>
         <!-- Additional content or message if needed -->
     </div>
 </body>
